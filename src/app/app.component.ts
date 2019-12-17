@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newAngularProject';
+receiveHeaderToggle: string = 'recipe';
+
+  headerToggle(event: string) {
+    this.receiveHeaderToggle = event;
+  }
 }
